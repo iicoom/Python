@@ -1,0 +1,5 @@
+###############
+刚装完Pycharm，新建Project的时候，出现了No Python interpreter selected。
+后来发现安装Pycharm的时候，并没有帮我把Python一起安装好，需要自己下载。
+下载安装了python3.4后，在python的安装目录下找到了python.exe，在Pycharm的project interpret处选中，即可成功新建工程。
+#############################################################################################################
