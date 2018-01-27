@@ -3,7 +3,7 @@ from baike_spider import url_manager, html_downloader, html_outputer, html_parse
 
 class SpiderMain(object):
     def __init__(self):
-        self.url = url_manager.UrlManager()
+        self.urls = url_manager.UrlManager()
         self.downloader = html_downloader.HtmlDownloader()
         self.parser = html_parser.HtmlParser()
         self.outputer = html_outputer.HtmlOutputer()
@@ -27,3 +27,8 @@ class SpiderMain(object):
                 print('craw failed')
 
         self.outputer.output_html()
+
+if __name__=="__main__":
+    root_url = "https://baike.baidu.com/view/21087.htm"
+    obj_spider = SpiderMain()
+    obj_spider.craw(root_url)
