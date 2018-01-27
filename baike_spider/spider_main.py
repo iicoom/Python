@@ -1,3 +1,6 @@
+from baike_spider import url_manager, html_downloader, html_outputer, html_parser
+
+
 class SpiderMain(object):
     def __init__(self):
         self.url = url_manager.UrlManager()
